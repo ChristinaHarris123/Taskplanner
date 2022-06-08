@@ -1,0 +1,6 @@
+.box {
+    width: 50vw;
+    height: 50vh;
+    background-image: linear-gradient(180deg, rgba(6,202,252,1) 15%, rgba(1,78,242,1) 67%, rgba(1,75,236,1) 100%);
+}
+
