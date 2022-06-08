@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -7,24 +8,28 @@ html, body {
 .jumbotron {
     font-family: monoton, sans-serif;
     color: white;
-    background: rgb(6,202,252);
-    background-image: linear-gradient(180deg, rgba(6,202,252,1) 15%, rgba(1,78,242,1) 67%, rgba(1,75,236,1) 100%);
+    background: rgb(6, 202, 252);
+    background-image: linear-gradient(180deg, rgba(6, 202, 252, 1) 15%, rgba(1, 78, 242, 1) 67%, rgba(1, 75, 236, 1) 100%);
 }
 
 .form-top {
     margin: 2em;
-    
+
 }
 
 .form-bottom {
     margin: 2em;
 }
+
 .addtask {
     margin: 1em;
 }
 
 .container2 {
     padding: 5px;
-    background: rgb(6,202,252);
-    background-image: linear-gradient(180deg, rgba(6,202,252,1) 15%, rgba(1,78,242,1) 67%, rgba(1,75,236,1) 100%);
+    text-align: center;
+    font-family: monoton, sans-serif;
+    color: white;
+    background: rgb(6, 202, 252);
+    background-image: linear-gradient(180deg, rgba(6, 202, 252, 1) 15%, rgba(1, 78, 242, 1) 67%, rgba(1, 75, 236, 1) 100%);
 }
