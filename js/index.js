@@ -8,16 +8,16 @@ taskManager.load();
 
 taskManager.render();
 
-const newTaskForm = document.querySelector('.container1');
+const submitButton = document.querySelector('button');
 
-newTaskForm.addEventListener('submit', (event)=> {
+submitButton.addEventListener('click', (event) => {
     event.preventDefault();
 
     const newTaskNameInput = document.querySelector('#newTaskNameInput');
     const newTaskDescription = document.querySelector('#newTaskDescription');
     const newTaskAssignedTo = document.querySelector('#newTaskAssignedTo');
     const newTaskDueDate = document.querySelector('#newTaskDueDate');
-    
+
 
     const name = newTaskNameInput.value;
     const description = newTaskDescription.value;
@@ -28,7 +28,7 @@ newTaskForm.addEventListener('submit', (event)=> {
 
     taskManager.save();
 
-    //taskManager.render();
+    taskManager.render();
 
     newTaskNameInput.value = '';
     newTaskDescription.value = '';
@@ -37,8 +37,6 @@ newTaskForm.addEventListener('submit', (event)=> {
 
 });
 
-
-//submitButton.addEventListener('submit', );
 
 const tasksList = document.querySelector('.container2');
 
@@ -70,7 +68,7 @@ tasksList.addEventListener('click', (event) => {
 
 
 
-        
+
 
         // Saves the tasks to local storage
         taskManager.save();
