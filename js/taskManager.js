@@ -1,5 +1,5 @@
-function createTaskHtml(id, name, description, assignedTo, dueDate, status) {
-    const html = `<li class="list-group-item" data-task-id=${id}>
+const createTaskHtml = (id, name, description, assignedTo, dueDate, status) =>
+`<li class="list-group-item" data-task-id=${id}>
 <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
     <h5>${name}</h5>
     <span class="badge ${status === 'TODO' ? 'badge-danger' : 'badge-success'}">${status}</span>
@@ -15,8 +15,6 @@ function createTaskHtml(id, name, description, assignedTo, dueDate, status) {
 </div>
 </li>
 `;
-    return html;
-}
 
 class TaskManager {
     constructor(currentId = 0) {
@@ -31,7 +29,7 @@ class TaskManager {
             description: description,
             assignedTo: assignedTo,
             dueDate: dueDate,
-            status: 'TODO',
+            status: 'TODO'
         };
         
 
