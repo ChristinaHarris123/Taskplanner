@@ -38,7 +38,7 @@ submitButton.addEventListener('click', (event) => {
 });
 
 
-const tasksList = document.querySelector('.container2');
+const tasksList = document.querySelector('.container3');
 
 tasksList.addEventListener('click', (event) => {
     if (event.target.classList.contains('done-button')) {
