@@ -8,8 +8,10 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) =>
     <assigned-plus-date>Assigned To: ${assignedTo}</assigned-plus-date>
     <assigned-plus-date>Due: ${dueDate}</assigned-plus-date>
 </div>
+<div>
 <p>${description}</p>
-<div class="d-flex w-100 justify-content-center">
+</div>
+<div class="d-flex .flex w-100 justify-content-center">
     <button class="btn btn-outline-success done-button mr-1 ${status === 'TODO' ? 'visible' : 'invisible'}">Mark As Done</button>
     <button class="btn btn-outline-danger delete-button">Delete</button>
 </div>
