@@ -8,9 +8,9 @@ taskManager.load();
 
 taskManager.render();
 
-const newTaskForm = document.querySelector('.container1');
+const submitButton = document.querySelector('button');
 
-newTaskForm.addEventListener('submit', (event)=> {
+submitButton.addEventListener('click', (event) => {
     event.preventDefault();
 
     const newTaskNameInput = document.querySelector('#newTaskNameInput');
@@ -28,7 +28,7 @@ newTaskForm.addEventListener('submit', (event)=> {
 
     taskManager.save();
 
-    //taskManager.render();
+    taskManager.render();
 
     newTaskNameInput.value = '';
     newTaskDescription.value = '';
@@ -40,10 +40,10 @@ newTaskForm.addEventListener('submit', (event)=> {
 
 //submitButton.addEventListener('submit', );
 
-const tasksList = document.querySelector('.container2');
+const tasksList = document.querySelector('.container3');
 
 tasksList.addEventListener('click', (event) => {
-    if (event.target.classList.contains('done-button')) {
+   if (event.target.classList.contains('done-button')) {
         const parentTask = event.target.parentElement.parentElement;
 
         const taskId = Number(parentTask.dataset.taskId);
