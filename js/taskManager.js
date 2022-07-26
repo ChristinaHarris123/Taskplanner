@@ -1,5 +1,5 @@
 const createTaskHtml = (id, name, description, assignedTo, dueDate, status) =>
-`<li class="list-group-item" data-task-id=${id}>
+`<div><li class="list-group-item" data-task-id=${id}>
 <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
     <h5>${name}</h5>
     <span class="badge ${status === 'TODO' ? 'badge-danger' : 'badge-success'}">${status}</span>
@@ -13,7 +13,7 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) =>
     <button class="btn btn-outline-success done-button mr-1 ${status === 'TODO' ? 'visible' : 'invisible'}">Mark As Done</button>
     <button class="btn btn-outline-danger delete-button">Delete</button>
 </div>
-</li>
+</li></div>
 `;
 
 class TaskManager {
