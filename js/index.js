@@ -17,7 +17,7 @@ submitButton.addEventListener('click', (event) => {
     const newTaskDescription = document.querySelector('#newTaskDescription');
     const newTaskAssignedTo = document.querySelector('#newTaskAssignedTo');
     const newTaskDueDate = document.querySelector('#newTaskDueDate');
-    
+
 
     const name = newTaskNameInput.value;
     const description = newTaskDescription.value;
@@ -70,7 +70,7 @@ tasksList.addEventListener('click', (event) => {
 
 
 
-        
+
 
         // Saves the tasks to local storage
         taskManager.save();
