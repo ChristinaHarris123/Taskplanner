@@ -18,11 +18,10 @@ submitButton.addEventListener('click', (event) => {
     const newTaskAssignedTo = document.querySelector('#newTaskAssignedTo');
     const newTaskDueDate = document.querySelector('#newTaskDueDate');
 
-
     const name = newTaskNameInput.value;
     const description = newTaskDescription.value;
     const assignedTo = newTaskAssignedTo.value;
-    const dueDate = newTaskDueDate.value;
+    const dueDate = newTaskDueDate.value; 
 
     taskManager.addTask(name, description, assignedTo, dueDate);
 
@@ -35,6 +34,7 @@ submitButton.addEventListener('click', (event) => {
     newTaskAssignedTo.value = '';
     newTaskDueDate.value = '';
 
+    
 });
 
 
@@ -64,9 +64,6 @@ tasksList.addEventListener('click', (event) => {
         const taskId = Number(parentTask.dataset.taskId);
 
         taskManager.deleteTask(taskId);
-
-
-
 
 
 
