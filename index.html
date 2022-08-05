@@ -32,26 +32,26 @@
 
                 <!--Top two selections-->
                 <section class="form-top">
-                    <form class="was-validated needs-validation">
+                    <form class="was-validated">
                         <div class="mb-3">
-                            <label for="validationTextarea " class="form-label">Task Name</label>
-                            <input type="taskname" class="form-control is-invalid" maxlength="25" id="newTaskNameInput"
+                            <label for="validationTextarea" class="form-label">Task Name</label>
+                            <input type="taskname" class="form-control" maxlength="25" id="newTaskNameInput"
                                 placeholder=" " required>
                             <div class="invalid-feedback">
                                 Please enter a message in the textarea.
                             </div>
                         </div>
-                    </form>
-                    <div class="mb-3">
-                        <form class="was-validated needs-validation">
-                            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                            <textarea class="form-control" maxlength="150" id="newTaskDescription" rows="3"></textarea>
-                            <div class="invalid-feedback">
-                                Please enter a message in the textarea.
+                        <form class="was-validated">
+                            <div class="mb-3">
+                                <label for="validationTextarea" class="form-label">Description</label>
+                                <textarea class="form-control" maxlength="150" id="newTaskDescription" rows="3"
+                                    required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter a message in the textarea.
+                                </div>
                             </div>
                         </form>
-                    </div>
-
+                    </form>
                 </section>
         </section>
         <!--bottom selections-->
