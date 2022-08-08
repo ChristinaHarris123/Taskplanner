@@ -33,10 +33,9 @@ class TaskManager {
             dueDate: dueDate,
             status: 'TODO'
         };
-        
+
 
         this.tasks.push(task);
-
     }
     // this creates deleteTask
 
@@ -83,8 +82,8 @@ class TaskManager {
         const tasksHtml = tasksHtmlList.join('\n');
         const tasksList = document.querySelector('.container3');
         tasksList.innerHTML = tasksHtml;
-        
-     
+
+
     }
 
     save() {
