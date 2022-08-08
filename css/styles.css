@@ -47,5 +47,9 @@ body {
     row-gap: 5px;
 }
 
+.addbutton:hover {
+    color: rgba(1, 78, 242, 1);
+    border: solid 1px;
+}
 
 
